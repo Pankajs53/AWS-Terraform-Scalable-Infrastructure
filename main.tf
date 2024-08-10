@@ -221,7 +221,7 @@ resource "aws_lb_target_group" "test" {
   }
 }
 
-# CHECK THIS (aws auto scale group attachment with target group)
+# auto scaling group attachment with target group
 resource "aws_autoscaling_attachment" "asg_target_group" {
   
  autoscaling_group_name = aws_autoscaling_group.main.id
