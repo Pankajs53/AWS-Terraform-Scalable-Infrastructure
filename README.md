@@ -73,8 +73,8 @@ Edit the variable.tf file to set your desired values, such as the VPC CIDR block
   2. Apply the Terraform configuration to create the infrastructure:
   ```bash
   terraform apply
-<img width="958" alt="server-response-2" src="https://github.com/user-attachments/assets/f6006c60-0ff7-4969-86ab-7c306d320522">
-<img width="958" alt="server-response1" src="https://github.com/user-attachments/assets/b37970d8-0aa4-4ca6-917d-dba8da104993">
-<img width="793" alt="vpc-structure" src="https://github.com/user-attachments/assets/8b58e3e7-d4dc-4c25-80b0-12a0b73802a6">
+!<img width="958" alt="server-response-2" src="https://github.com/user-attachments/assets/f6006c60-0ff7-4969-86ab-7c306d320522">
+!<img width="958" alt="server-response1" src="https://github.com/user-attachments/assets/b37970d8-0aa4-4ca6-917d-dba8da104993">
+!<img width="793" alt="vpc-structure" src="https://github.com/user-attachments/assets/8b58e3e7-d4dc-4c25-80b0-12a0b73802a6">
 
 
