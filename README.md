@@ -33,6 +33,8 @@ The infrastructure is built across two availability zones for high availability 
 - **Auto Scaling Group:** Automatically scales the number of instances based on demand.
 - **Load Balancer:** Distributes incoming HTTP traffic across the EC2 instances in the Auto Scaling Group.
 
+![VPC Example Private Subnets](https://github.com/Pankajs53/AWS-Terraform-Scalable-Infrastructure/blob/main/vpc-example-private-subnets.png)
+
 
 ## Prerequisites
 
