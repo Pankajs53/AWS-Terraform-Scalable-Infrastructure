@@ -36,6 +36,19 @@ The infrastructure is built across two availability zones for high availability 
 ![VPC Example Private Subnets](https://github.com/Pankajs53/AWS-Terraform-Scalable-Infrastructure/blob/main/vpc-example-private-subnets.png)
 
 
+## Basic Flow
+
+- User: Initiates a request from the internet.
+- Load Balancer DNS: The request is directed to the DNS name of the load balancer. (The load balancer is placed in a public subnet.)
+- Internet Gateway: Allows the request from the internet to reach resources in the public subnet. It handles inbound and outbound traffic between the VPC and the internet.
+- Route Table: The route table associated with the public subnet directs traffic to the Internet Gateway. This route table also governs how traffic is routed within the VPC.
+- Public Subnet: Contains the load balancer. The load balancer receives the request from the internet through the Internet Gateway.
+- Network Access Control List (NACL): Controls inbound and outbound traffic at the subnet level. For the public subnet, NACLs control traffic to and from the internet, and for the private subnet, they control traffic between subnets and the load balancer.
+- Security Group: Attached to the load balancer and EC2 instances. It controls inbound and outbound traffic at the instance level. The load balancer's security group controls traffic to the EC2 instances, while the EC2 instances' security group controls traffic to and from the instances.
+- Private Subnet: Where the EC2 instances might reside. The load balancer (in the public subnet) routes traffic to the EC2 instances in the private subnet.
+- EC2 Instance: The final destination of the request, where it is processed.
+
+
 ## Prerequisites
 
 Before deploying this infrastructure, ensure you have the following:
